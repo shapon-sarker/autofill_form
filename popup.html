@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoFil Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="icon.svg" alt="AutoFil Form Logo">
+        <h1>AutoFil Form</h1>
+      </div>
+      <p class="tagline">Save time. Fill forms instantly.</p>
+    </header>
+
+    <div class="main-content">
+      <div class="form-group">
+        <label for="profileSelect">Select Profile</label>
+        <select id="profileSelect" class="form-control"></select>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="newProfileName" class="form-control" placeholder="New Profile Name">
+      </div>
+
+      <div class="buttons">
+        <button id="newProfileBtn" class="btn btn-primary"><i class="fas fa-plus"></i> New</button>
+        <button id="saveBtn" class="btn btn-success"><i class="fas fa-save"></i> Save</button>
+        <button id="loadBtn" class="btn btn-info"><i class="fas fa-file-import"></i> Load</button>
+        <button id="deleteBtn" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</button>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-save feature-icon"></i>
+          <span>Save multiple form profiles</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-bolt feature-icon"></i>
+          <span>Instantly fill forms</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-lock feature-icon"></i>
+          <span>Secure local storage</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="developer">
+        <h3>Developer</h3>
+        <p>Md. Shapon Sarker</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/md.shapan11/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/shapon-sarker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/+8801616910136" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

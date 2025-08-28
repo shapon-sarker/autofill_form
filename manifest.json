@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AutoFil Form",
+  "version": "1.0",
+  "description": "Automatically save and fill form data with multiple profiles and a professional UI.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_title": "AutoFil Form"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

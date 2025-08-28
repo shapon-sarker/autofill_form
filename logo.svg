@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="8" y="8" width="112" height="112" rx="16" fill="#4285F4" />
+  
+  <!-- Form outline -->
+  <rect x="24" y="24" width="80" height="80" rx="4" fill="#FFFFFF" />
+  
+  <!-- Form lines -->
+  <rect x="32" y="40" width="64" height="4" rx="2" fill="#E1E1E1" />
+  <rect x="32" y="52" width="64" height="4" rx="2" fill="#E1E1E1" />
+  <rect x="32" y="64" width="64" height="4" rx="2" fill="#E1E1E1" />
+  <rect x="32" y="76" width="40" height="4" rx="2" fill="#E1E1E1" />
+  
+  <!-- Checkmark -->
+  <path d="M88,44 L76,56 L68,48 L64,52 L76,64 L92,48 L88,44 Z" fill="#34A853" />
+  
+  <!-- Auto-fill indicator -->
+  <circle cx="96" cy="32" r="8" fill="#FBBC05" />
+</svg>

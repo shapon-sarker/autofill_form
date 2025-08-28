@@ -1,0 +1,244 @@
+:root {
+  --primary-color: #4776E6;
+  --secondary-color: #8E54E9;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  background: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+.container {
+  padding: 16px;
+  border-radius: var(--border-radius);
+  background: white;
+  box-shadow: var(--box-shadow);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.main-content {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  transition: var(--transition);
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(71, 118, 230, 0.2);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn i {
+  margin-right: 6px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-success {
+  background: var(--success-color);
+}
+
+.btn-info {
+  background: var(--info-color);
+}
+
+.btn-danger {
+  background: var(--danger-color);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.developer h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.developer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #666;
+  font-size: 20px;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a[title="Facebook"]:hover {
+  color: #1877f2;
+}
+
+.social-links a[title="GitHub"]:hover {
+  color: #333;
+}
+
+.social-links a[title="WhatsApp"]:hover {
+  color: #25d366;
+}
+
+/* Notification styles */
+.notification {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  animation: fadeIn 0.3s;
+}
+
+.notification.success {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+.notification.error {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.version {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
