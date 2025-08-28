@@ -2,6 +2,9 @@
 
 ![AutoFil Form Logo](./icon.png)
 
+<img width="333" height="608" alt="image" src="https://github.com/user-attachments/assets/feb6c6d2-b087-4ccb-998b-f13e5c1d50ac" />
+
+
 ## Overview
 
 AutoFil Form is a powerful browser extension designed to streamline your online form-filling experience. It securely stores and automatically populates form data across multiple websites, saving you time and reducing errors with a sleek, intuitive interface.
@@ -84,4 +87,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-© 2023 [Your Name/Company]. All Rights Reserved.
+
+© 2025 [Md.Shapon Sarker]. All Rights Reserved.
